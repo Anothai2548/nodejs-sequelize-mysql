@@ -16,7 +16,7 @@ app.use(express.json())
 app.use(express.urlencoded({extend: true}))
 
 app.get("/", (req, res) => {
-    res.json({meassage: "Welcome to ITD102 application"})
+    res.json({meassage: "Welcome to default route"})
 })
 
 require("./app/routes/tutorial.routes.js")(app)
